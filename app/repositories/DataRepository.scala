@@ -10,7 +10,7 @@ import reactivemongo.bson.BSONObjectID
 import uk.gov.hmrc.mongo.ReactiveRepository
 
 import scala.concurrent.{ExecutionContext, Future}
-@Singleton
+// @Singleton
 class DataRepository @Inject()(mongo: ReactiveMongoComponent,
                                implicit val ec: ExecutionContext) extends ReactiveRepository[DataModel, BSONObjectID](
   "data",
