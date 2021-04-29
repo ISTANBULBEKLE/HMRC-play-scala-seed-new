@@ -7,7 +7,6 @@ import repositories.DataRepository
 
 import scala.concurrent.Future
 
-// import javax.inject.Inject
 import scala.concurrent.ExecutionContext
 class ApplicationController @Inject()(val controllerComponents: ControllerComponents, dataRepository: DataRepository, implicit val ec: ExecutionContext) extends BaseController {
   def index(): Action[AnyContent] = Action.async { implicit request =>
